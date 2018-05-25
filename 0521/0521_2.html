@@ -1,0 +1,25 @@
+
+<body>
+<h1>check成績</h1>
+<form name='form' id='form'>
+<input align="right" type="number" id="box" value=0 /> 
+
+</form>
+
+ <input  type="button" value="check" onClick="compute()"> 
+
+
+<p id=print></p>
+<script>
+var a
+function compute(){   
+a = document.getElementById('box').value;
+if(a>=60){
+  document.getElementById("print").innerHTML='pass';}
+else{
+  document.getElementById("print").innerHTML='你根本詹前駒';
+  
+}
+}
+</script>
+</body>
